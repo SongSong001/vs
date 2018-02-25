@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.TasksInfo, WC.Model" table="Tasks" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+        <property name="TaskName" column="TaskName" type="String" />
+        <property name="TypeID" column="TypeID" type="Int32" length="4" />
+
+        <property name="TypeName" column="TypeName" type="String" />
+        <property name="Important" column="Important" type="String" />
+        
+        <property name="Status" column="Status" type="Int32" length="4" />
+        <property name="IsOtherSee" column="IsOtherSee" type="Int32" length="4" />
+        <property name="OnceSubmit" column="OnceSubmit" type="Int32" length="4" />
+        <property name="CreatorID" column="CreatorID" type="Int32" length="4" />
+
+        <property name="CreatorRealName" column="CreatorRealName" type="String" />
+        <property name="CreatorDepName" column="CreatorDepName" type="String" />
+        <property name="ManageUserList" column="ManageUserList" type="String" />
+        <property name="ManageNameList" column="ManageNameList" type="String" />
+        <property name="ExecuteUserList" column="ExecuteUserList" type="String" />
+        <property name="ExecuteNameList" column="ExecuteNameList" type="String" />
+        <property name="AddTime" column="AddTime" type="String" />
+        <property name="UpdateTime" column="UpdateTime" type="String" />
+        <property name="ExpectTime" column="ExpectTime" type="String" />
+        <property name="Notes" column="Notes" type="String" />
+        <property name="FilePath" column="FilePath" type="String" />
+        <property name="Records" column="Records" type="String" />
+        <property name="IsComplete" column="IsComplete" type="Int32" length="4" />
+    </class>
+
+</hibernate-mapping>

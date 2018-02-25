@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="WC.Model.Flows_ModelInfo, WC.Model" table="Flows_Model" >
+    <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="guid" column="guid" type="String"  />
+    <property name="Flow_Name" column="Flow_Name" type="String" />
+    <property name="CreatorID" column="CreatorID" type="Int32" length="4" />
+    <property name="CreatorRealName" column="CreatorRealName" type="String"  />
+    <property name="CreatorDepName" column="CreatorDepName" type="String"  />
+    <property name="Remark" column="Remark" type="String" />
+    <property name="ModelFileID" column="ModelFileID" type="String" />
+    <property name="AddTime" column="AddTime" type="DateTime" />
+
+    <property name="IsComplete" column="IsComplete" type="Int32" length="4" />
+
+    <property name="ComID" column="ComID" type="Int32" length="4" />
+    <property name="ShareDeps" column="ShareDeps" type="String" />
+      <property name="namelist" column="namelist" type="String" />
+  </class>
+
+</hibernate-mapping>

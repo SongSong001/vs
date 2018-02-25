@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.WorkLogInfo, WC.Model" table="WorkLog" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+
+        <property name="LogTitle" column="LogTitle" type="String"  />
+        <property name="FilePath" column="FilePath" type="String"  />
+        <property name="Notes" column="Notes" type="String"  />
+
+        <property name="CreatorID" column="CreatorID" type="Int32"  />
+        <property name="CreatorRealName" column="CreatorRealName" type="String"  />
+        <property name="CreatorDepName" column="CreatorDepName" type="String"  />
+
+        <property name="ShareUsers" column="ShareUsers" type="String"  />
+        <property name="namelist" column="namelist" type="String"  />
+        <property name="AddTime" column="AddTime" type="String" />
+
+        <property name="UpdateTime" column="UpdateTime" type="String" />
+
+    </class>
+
+</hibernate-mapping>

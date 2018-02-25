@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F276676-759B-4F23-AAB5-34F1B5ADDDD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WC.IDAL</RootNamespace>
+    <AssemblyName>WC.IDAL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WC.IDAL/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBas_Com.cs" />
+    <Compile Include="IBas_ComType.cs" />
+    <Compile Include="IBas_ComType_Module.cs" />
+    <Compile Include="ICars.cs" />
+    <Compile Include="ICars_Action.cs" />
+    <Compile Include="ICars_Type.cs" />
+    <Compile Include="ICRM.cs" />
+    <Compile Include="ICRM_Contact.cs" />
+    <Compile Include="ICRM_Sup.cs" />
+    <Compile Include="IC_Good.cs" />
+    <Compile Include="IC_GoodAction.cs" />
+    <Compile Include="IC_GoodType.cs" />
+    <Compile Include="IDocs_Doc.cs" />
+    <Compile Include="IDocs_DocType.cs" />
+    <Compile Include="IDocs_Office.cs" />
+    <Compile Include="IFlows.cs" />
+    <Compile Include="IFlows_Doc.cs" />
+    <Compile Include="IFlows_Model.cs" />
+    <Compile Include="IFlows_ModelFile.cs" />
+    <Compile Include="IFlows_ModelStep.cs" />
+    <Compile Include="IFlows_Model_Type.cs" />
+    <Compile Include="IFlows_Step.cs" />
+    <Compile Include="IFlows_StepAction.cs" />
+    <Compile Include="IGov.cs" />
+    <Compile Include="IGov_Doc.cs" />
+    <Compile Include="IGov_Model.cs" />
+    <Compile Include="IGov_ModelFile.cs" />
+    <Compile Include="IGov_ModelStep.cs" />
+    <Compile Include="IGov_Model_Type.cs" />
+    <Compile Include="IGov_Recipient.cs" />
+    <Compile Include="IGov_Step.cs" />
+    <Compile Include="IGov_StepAction.cs" />
+    <Compile Include="IMails.cs" />
+    <Compile Include="IMails_Detail.cs" />
+    <Compile Include="IMeeting.cs" />
+    <Compile Include="INews_Article.cs" />
+    <Compile Include="INews_Type.cs" />
+    <Compile Include="INoteBook.cs" />
+    <Compile Include="IPaper.cs" />
+    <Compile Include="IPaperDownload.cs" />
+    <Compile Include="IPaperType.cs" />
+    <Compile Include="IPhoneBook.cs" />
+    <Compile Include="ISms_Data.cs" />
+    <Compile Include="ISysHR.cs" />
+    <Compile Include="ISys_Dep.cs" />
+    <Compile Include="ISys_Dep_Module.cs" />
+    <Compile Include="ISys_Module.cs" />
+    <Compile Include="ISys_Role.cs" />
+    <Compile Include="ISys_Role_Module.cs" />
+    <Compile Include="ISys_Seal.cs" />
+    <Compile Include="ISys_User.cs" />
+    <Compile Include="ISys_UserLogin.cs" />
+    <Compile Include="ITasks.cs" />
+    <Compile Include="ITasks_Type.cs" />
+    <Compile Include="ITasks_User.cs" />
+    <Compile Include="ITips.cs" />
+    <Compile Include="IVote.cs" />
+    <Compile Include="IVoteDetail.cs" />
+    <Compile Include="IWorkLog.cs" />
+    <Compile Include="IWork_Attend.cs" />
+    <Compile Include="IWork_AttendSet.cs" />
+    <Compile Include="IZ_EX1.cs" />
+    <Compile Include="IZ_EX2.cs" />
+    <Compile Include="IZ_EX3.cs" />
+    <Compile Include="IZ_EX4.cs" />
+    <Compile Include="IZ_EX5.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{C4D7D8C3-1464-4F0C-BCE9-FA4B9A92B9BB}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>替换</title>
+<style type="text/css">
+td,input,textarea {
+	font-size:12px;
+}
+</style>
+</head>
+<body bgcolor="#EEEEEE" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" unselectable="on">
+<center>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2"><strong>查找替换<br>
+    </strong>
+      <hr size="1" noshade></td>
+    </tr>
+  <tr>
+    <td height="18" align="right">查找: </td>
+    <td><input name="find" type="text" id="find" size="20"></td>
+  </tr> 
+  <tr>
+    <td align="right">替换: </td>
+    <td><input name="replace" type="text" id="replace" size="20"></td>
+  </tr>   
+  <tr>
+    <td align="right">区分大小写: </td>
+    <td><input name="case" type="checkbox" id="case" value="4"></td>
+  </tr>      
+  <tr>
+    <td height="28" colspan="2" align="center">
+	  <input type="button" class="Button" name="Submit" value="确定" style="border:1px outset;" onClick="ok()">
+	&nbsp; &nbsp;
+	<input name="cancel" type="button" id="cancel" value="关闭" style="border:1px outset;" onClick="cencel()"></td>
+    </tr>
+</table>
+
+<script language="javascript">
+function oo(ID){
+	return document.getElementById(ID);
+}
+function ok(){
+	var ret = new Array();
+	ret[0] = oo('find').value;
+	if(!ret[0]){
+		alert("请输入查找内容.");return false;
+	}	
+	ret[1] = oo('replace').value;
+	ret[2] = 0;
+	if(oo('case').checked) ret[2] += oo('case').value*1;
+	if(window.opener){
+		var n=window.name;
+		if(n) window.opener.formatText('repalce',n,ret);
+	}
+	window.returnValue = ret;
+	window.close();
+}
+
+function cencel(){
+	window.returnValue = null;
+	window.close();
+}
+</script>
+
+</center>
+</body>
+</html>

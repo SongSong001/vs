@@ -1,0 +1,35 @@
+
+.editor_table {	border:1px solid #CCCCCC; background-color: #DCDCDC; padding: 3px;}
+.editor_content { border-left: 1px solid #A7A6AA; border-top: 1px solid #A7A6AA; border-bottom: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF;  }
+.editor_content td{ border-left: 1px solid #85878C; border-top: 1px solid #85878C; border-bottom: 1px solid #EBE9ED; border-right: 1px solid #EBE9ED;  }
+
+.editor_toolbar { background-color: #DCDCDC; }
+.editor_select_off { background-color: #F3F3F3; margin:2px; margin-right:5px; }
+
+.toolbarblock {	clear:none; width:auto; float:left;}
+.toolbarnewline {clear:both;}
+
+.button     { width: 22px; height: 22px; border: 1px solid #DCDCDC; padding: 1px; margin:1px; }
+.buttonOver { width: 22px; height: 22px; border: 1px solid #316AC5; padding: 1px; margin:1px; background-color:#DFF1FF;}
+.buttonOn	{ width: 22px; height: 22px; border: 1px solid #316AC5; padding: 1px; margin:1px; background-color:#C1D2EE;}
+
+.dropdown          { background-color: #FFFFFF; border: 1px solid #333333; overflow: auto; padding: 1px; position:absolute; }
+button.mouseOver   { background-color: #EEEEEE; border: 1px solid #666666; padding: 3px; cursor: default; text-align: left;}
+button.mouseOut    { background-color: #FFFFFF; border: 1px solid #FFFFFF; padding: 3px; cursor: default; text-align: left;}
+
+.modebutton { border-width:1px; border-style:solid;font-size:12px; margin:2px; padding:2px; padding-right:6px; clear:none; float:left; cursor:pointer; }
+.modebutton_off { border-color: #FFFFFF #999999 #999999 #FFFFFF; }
+.modebutton_on { border-color: #999999 #FFFFFF #FFFFFF #999999 ; }
+
+.expand_button{ float:right;cursor:pointer;margin:2px; }
+
+.on   { background-color: #EEEEEE; border: 1px solid #CCCCCC; padding: 6px; width: 140px; cursor: default; height: 5px;}
+.off  { background-color: #FFFFFF; border: 1px solid #FFFFFF; padding: 6px; width: 140px; cursor: default; height: 5px;}
+
+
+.selectColorTable  { border: 1px solid #7E7E81; background-color: #F7F7F7; padding: 1px; }
+.selectColorBorder { border: 1px solid #F7F7F7; }
+.selectColorOn     { border: 1px solid #999999; background-color: #CCCCCC; }
+.selectColorOff    { border: 1px solid #F7F7F7; background-color: #F7F7F7; }
+.selectColorBox    { border: 1px solid #FFFFFF; font-size: 1px; height: 13px; width: 13px; }
+

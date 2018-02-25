@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>插入纯文本</title>
+<style type="text/css">
+td,input,textarea {
+	font-size:12px;
+}
+</style>
+</head>
+<body bgcolor="#EEEEEE" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" unselectable="on">
+<center>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2"><strong>插入纯文本<br>
+    </strong>
+      <hr size="1" noshade></td>
+    </tr>
+  <tr>
+    <td height="18">粘贴到文本框：</td>
+    <td><textarea name="data" cols="30" rows="4" id="data"></textarea></td>
+  </tr> 
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>    
+  <tr>
+    <td height="28" colspan="2" align="center">
+	  <input type="button" class="Button" name="Submit" value="确定" style="border:1px outset;" onClick="ok()">
+	&nbsp; &nbsp;
+	<input name="cancel" type="button" id="cancel" value="关闭" style="border:1px outset;" onClick="cencel()"></td>
+    </tr>
+</table>
+
+<script language="javascript">
+function oo(ID){
+	return document.getElementById(ID);
+}
+function ok(){
+	if(window.opener){
+		var txt = oo('data').value.replace( /\n/g, '<br />' )
+		var n=window.name;
+		if(n) window.opener.insertHTML(txt,n);
+	}
+	window.close();
+}
+
+function cencel(){
+	window.returnValue = null;
+	window.close();
+}
+</script>
+
+</center>
+</body>
+</html>

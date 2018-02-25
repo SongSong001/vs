@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="WC.Model.Bas_ComType_ModuleInfo, WC.Model" table="Bas_ComType_Module" >
+    <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="guid" column="guid" type="String"  />
+    <property name="ModuleID" column="ModuleID" type="Int32" length="4" />
+    <property name="ComTypeID" column="ComTypeID" type="Int32" length="4" />
+  </class>
+
+</hibernate-mapping>

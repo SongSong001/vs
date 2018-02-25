@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.Work_AttendSetInfo, WC.Model" table="Work_AttendSet" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String" />
+        <property name="AttendTimes" column="AttendTimes" type="String" />
+        <property name="AttendNames" column="AttendNames" type="String" />
+        <property name="Offset" column="Offset" type="String" />
+        <property name="WorkKind" column="WorkKind" type="Int32" length="4" />
+    </class>
+
+</hibernate-mapping>

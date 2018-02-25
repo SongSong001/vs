@@ -1,0 +1,11 @@
+ser-agent: *
+Disallow: /Manage/
+Disallow: /KindEditor/
+Disallow: /Install/
+Disallow: /DK_Config/
+Disallow: /DK_Css/
+Disallow: /Files/
+Disallow: /InfoTip/
+Disallow: /js/
+Disallow: /bbs/
+Disallow: /Lesktop/

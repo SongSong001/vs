@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.Sys_UserInfo, WC.Model" table="Sys_User" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+        <property name="UserName" column="UserName" type="String"  />
+        <property name="PassWord" column="PassWord" type="String"  />
+        <property name="RealName" column="RealName" type="String"  />
+        <property name="Sex" column="Sex" type="Int32" length="4" />
+        <property name="Birthday" column="Birthday" type="String"  />
+        <property name="Tel" column="Tel" type="String"  />
+        <property name="Phone" column="Phone" type="String"  />
+        <property name="RoleID" column="RoleID" type="Int32" length="4" />
+        <property name="RoleGUID" column="RoleGUID" type="String"  />
+        <property name="DepID" column="DepID" type="Int32" length="4" />
+        <property name="DepGUID" column="DepGUID" type="String"  />
+        <property name="DepName" column="DepName" type="String"  />
+        <property name="LastLoginIp" column="LastLoginIp" type="String"  />
+        <property name="LastLoginTime" column="LastLoginTime" type="DateTime" />
+        <property name="LoginQuantity" column="LoginQuantity" type="Int32" length="4" />
+        <property name="Status" column="Status" type="Int32" length="4" />
+        <property name="IsLock" column="IsLock" type="Int32" length="4" />
+        <property name="RegFromIp" column="RegFromIp" type="String"  />
+        <property name="RegTime" column="RegTime" type="DateTime" />
+        <property name="ComID" column="ComID" type="Int32" length="4" />
+        <property name="ComGUID" column="ComGUID" type="String"  />
+        <property name="Notes" column="Notes" type="String" />
+      <property name="QQ" column="QQ" type="String"  />
+      <property name="Email" column="Email" type="String" />
+      <property name="JoinTime" column="JoinTime" type="String" />
+      <property name="DirectSupervisor" column="DirectSupervisor" type="Int32" />
+
+      <property name="PositionName" column="PositionName" type="String" />
+      <property name="HomeAddress" column="HomeAddress" type="String" />
+        <property name="PerPic" column="PerPic" type="String" />
+
+        <property name="MsgTime" column="MsgTime" type="Int32" length="4" />
+        <property name="MemoShare" column="MemoShare" type="Int32" length="4" />
+
+        <property name="Orders" column="Orders" type="Int32" length="4" />
+
+        <property name="et1" column="et1" type="Int32" length="4" />
+        <property name="et2" column="et2" type="Int32" length="4" />
+        <property name="et3" column="et3" type="Int32" length="4" />
+
+        <property name="et4" column="et4" type="String" />
+        <property name="et5" column="et5" type="String" />
+        <property name="et6" column="et6" type="String" />        
+    </class>
+
+</hibernate-mapping>

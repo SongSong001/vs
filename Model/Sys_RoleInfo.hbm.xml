@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.Sys_RoleInfo, WC.Model" table="Sys_Role" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+        <property name="RoleName" column="RoleName" type="String"  />
+        <property name="ComID" column="ComID" type="Int32" length="4" />
+        <property name="ComGUID" column="ComGUID" type="String"  />
+        <property name="Notes" column="Notes" type="String"  />
+    </class>
+
+</hibernate-mapping>

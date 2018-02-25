@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="WC.Model.Flows_ModelStepInfo, WC.Model" table="Flows_ModelStep" >
+    <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="guid" column="guid" type="String"  />
+    <property name="Flow_ModelID" column="Flow_ModelID" type="Int32" length="4" />
+    <property name="Step_Name" column="Step_Name" type="String" />
+    <property name="Step_Remark" column="Step_Remark" type="String" />
+    <property name="Step_Orders" column="Step_Orders" type="Int32" length="4" />
+    <property name="RightToFinish" column="RightToFinish" type="Int32" length="4" />
+    <property name="MailAlert" column="MailAlert" type="Int32" length="4" />
+    <property name="IsEnd" column="IsEnd" type="Int32" length="4" />
+    <property name="IsHead" column="IsHead" type="Int32" length="4" />
+    <property name="IsUserEdit" column="IsUserEdit" type="Int32" length="4" />
+    <property name="Step_Type" column="Step_Type" type="Int32" length="4" />
+    <property name="UserList" column="UserList" type="String" />
+    <property name="NameList" column="NameList" type="String" />
+    <property name="UserList_dep" column="UserList_dep" type="String" />
+    <property name="NameList_dep" column="NameList_dep" type="String" />
+    <property name="IsUserFile" column="IsUserFile" type="Int32" length="4" />
+
+    <property name="ComID" column="ComID" type="Int32" length="4" />
+  </class>
+
+</hibernate-mapping>

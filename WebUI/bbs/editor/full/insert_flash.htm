@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>插入 Flash</title>
+<style type="text/css">
+td,input {
+	font-size:12px;
+}
+</style>
+</head>
+<body bgcolor="#EEEEEE" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" unselectable="on">
+<center>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2"><strong>插入 Flash 动画<br>
+    </strong>
+      <hr size="1" noshade></td>
+    </tr>
+  <tr>
+    <td>文件地址：</td>
+    <td>
+      <input name="filename" type="text" id="filename" style="border:1px inset;" value="http://" size="30">    </td>
+  </tr>
+  <tr>
+    <td>文件宽度：</td>
+    <td><input name="width" type="text" id="width" style="border:1px inset;" value="400" size="8"></td>
+  </tr>
+  <tr>
+    <td>文件高度：</td>
+    <td><input name="height" type="text" id="height" style="border:1px inset;" value="300" size="8"></td>
+  </tr>  
+  <tr>
+    <td height="28" colspan="2" align="center">
+	  <input type="button" class="Button" name="Submit" value="确定" style="border:1px outset;" onClick="ok()">
+	&nbsp; &nbsp;
+	<input name="cancel" type="button" id="cancel" value="关闭" style="border:1px outset;" onClick="cencel()"></td>
+    </tr>
+</table>
+
+<script language="javascript">
+function oo(ID){
+	return document.getElementById(ID);
+}
+
+function ok(){
+	var ret = new Array();
+	ret[0] = oo('filename').value;
+	ret[1] = parseInt(oo('width').value);
+	ret[2] = parseInt(oo('height').value);
+	if(ret[1]<=0 || ret[2]<=0){
+		alert('文件尺寸错误.');
+		return false;
+	}
+	if(window.opener){
+		var n=window.name;
+		if(n) window.opener.formatText('InsertFlash',n,ret);
+	}
+	window.returnValue = ret;
+	window.close();
+}
+
+function cencel(){
+	window.returnValue = null;
+	window.close();
+}
+
+</script>
+
+</center>
+</body>
+</html>

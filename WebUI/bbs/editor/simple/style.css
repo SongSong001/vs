@@ -1,0 +1,7 @@
+.toolbarblock {	clear:none; width:auto; float:left;}
+.button     { width: 22px; height: 22px; border: 1px solid #DCDCDC; padding: 1px; margin:1px; }
+.buttonOver { width: 22px; height: 22px; border: 1px solid #316AC5; padding: 1px; margin:1px; background-color:#DFF1FF;}
+.buttonOn	{ width: 22px; height: 22px; border: 1px solid #316AC5; padding: 1px; margin:1px; background-color:#C1D2EE;}
+.dropdown          { background-color: #FFFFFF; border: 1px solid #333333; overflow: auto; padding: 1px; position:absolute; }
+button.mouseOver   { background-color: #EEEEEE; border: 1px solid #666666; padding: 3px; cursor: default; text-align: left;}
+button.mouseOut    { background-color: #FFFFFF; border: 1px solid #FFFFFF; padding: 3px; cursor: default; text-align: left;}

@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Reflection;
+using System.Configuration;
+using WC.IDAL;
+
+namespace WC.Factory
+{
+    public class DALFactory
+    {
+        private static readonly string path = ConfigurationManager.AppSettings["WebDAL"];
+        
+        /// <summary>
+        /// 获取AdminDAL
+        /// </summary>
+        /// <returns>IAdmin</returns>
+        public static IAdmin CreateAdminDAL()
+        {
+            string className = path + ".AdminDAL";
+            return (IAdmin)Assembly.Load(path).CreateInstance(className);
+        }
+    }
+}

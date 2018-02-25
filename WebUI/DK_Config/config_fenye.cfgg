@@ -1,0 +1,5 @@
+
+$分页配置$
+{fenye_module?1000}  //Sys目录中list 分页数1000   @end
+{fenye_commom?20}  //普通分页数20   @end
+{fenye_mail?20}  //邮件系统分页数20   @end

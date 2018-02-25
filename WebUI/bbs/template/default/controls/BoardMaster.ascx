@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true"%>
+<asp:Repeater ID="MasterList" runat="server"><ItemTemplate><a href="ControlPanel.aspx?UserID=<%# Eval("UserID") %>"><%# Eval("UserName") %></a></ItemTemplate></asp:Repeater>

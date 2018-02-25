@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4D7D8C3-1464-4F0C-BCE9-FA4B9A92B9BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WC.Model</RootNamespace>
+    <AssemblyName>WC.Model</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/WC.Model/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bas_ComInfo.cs" />
+    <Compile Include="Bas_ComTypeInfo.cs" />
+    <Compile Include="Bas_ComType_ModuleInfo.cs" />
+    <Compile Include="CarsInfo.cs" />
+    <Compile Include="Cars_ActionInfo.cs" />
+    <Compile Include="Cars_TypeInfo.cs" />
+    <Compile Include="CRMInfo.cs" />
+    <Compile Include="CRM_ContactInfo.cs" />
+    <Compile Include="CRM_SupInfo.cs" />
+    <Compile Include="C_GoodActionInfo.cs" />
+    <Compile Include="C_GoodInfo.cs" />
+    <Compile Include="C_GoodTypeInfo.cs" />
+    <Compile Include="Docs_DocInfo.cs" />
+    <Compile Include="Docs_DocTypeInfo.cs" />
+    <Compile Include="Docs_OfficeInfo.cs" />
+    <Compile Include="FileSystemItem.cs" />
+    <Compile Include="FlowsInfo.cs" />
+    <Compile Include="Flows_DocInfo.cs" />
+    <Compile Include="Flows_ModelFileInfo.cs" />
+    <Compile Include="Flows_ModelInfo.cs" />
+    <Compile Include="Flows_ModelStepInfo.cs" />
+    <Compile Include="Flows_Model_TypeInfo.cs" />
+    <Compile Include="Flows_StepActionInfo.cs" />
+    <Compile Include="Flows_StepInfo.cs" />
+    <Compile Include="GovInfo.cs" />
+    <Compile Include="Gov_DocInfo.cs" />
+    <Compile Include="Gov_ModelFileInfo.cs" />
+    <Compile Include="Gov_ModelInfo.cs" />
+    <Compile Include="Gov_ModelStepInfo.cs" />
+    <Compile Include="Gov_Model_TypeInfo.cs" />
+    <Compile Include="Gov_RecipientInfo.cs" />
+    <Compile Include="Gov_StepActionInfo.cs" />
+    <Compile Include="Gov_StepInfo.cs" />
+    <Compile Include="MailsInfo.cs" />
+    <Compile Include="Mails_DetailInfo.cs" />
+    <Compile Include="MeetingInfo.cs" />
+    <Compile Include="News_ArticleInfo.cs" />
+    <Compile Include="News_TypeInfo.cs" />
+    <Compile Include="NoteBookInfo.cs" />
+    <Compile Include="PaperDownloadInfo.cs" />
+    <Compile Include="PaperInfo.cs" />
+    <Compile Include="PaperTypeInfo.cs" />
+    <Compile Include="PhoneBookInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sms_DataInfo.cs" />
+    <Compile Include="SysHRInfo.cs" />
+    <Compile Include="Sys_DepInfo.cs" />
+    <Compile Include="Sys_Dep_ModuleInfo.cs" />
+    <Compile Include="Sys_ModuleInfo.cs" />
+    <Compile Include="Sys_RoleInfo.cs" />
+    <Compile Include="Sys_Role_ModuleInfo.cs" />
+    <Compile Include="Sys_SealInfo.cs" />
+    <Compile Include="Sys_UserInfo.cs" />
+    <Compile Include="Sys_UserLoginInfo.cs" />
+    <Compile Include="TasksInfo.cs" />
+    <Compile Include="Tasks_TypeInfo.cs" />
+    <Compile Include="Tasks_UserInfo.cs" />
+    <Compile Include="TipsInfo.cs" />
+    <Compile Include="TmpInfo.cs" />
+    <Compile Include="VoteDetailInfo.cs" />
+    <Compile Include="VoteInfo.cs" />
+    <Compile Include="WorkLogInfo.cs" />
+    <Compile Include="Work_AttendInfo.cs" />
+    <Compile Include="Work_AttendSetInfo.cs" />
+    <Compile Include="Z_EX1Info.cs" />
+    <Compile Include="Z_EX2Info.cs" />
+    <Compile Include="Z_EX3Info.cs" />
+    <Compile Include="Z_EX4Info.cs" />
+    <Compile Include="Z_EX5Info.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bas_ComInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_DepInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_Dep_ModuleInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_ModuleInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_RoleInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_Role_ModuleInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_UserInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MailsInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FlowsInfo.hbm.xml" />
+    <EmbeddedResource Include="Flows_ModelFileInfo.hbm.xml" />
+    <EmbeddedResource Include="Flows_ModelInfo.hbm.xml" />
+    <EmbeddedResource Include="Flows_ModelStepInfo.hbm.xml" />
+    <EmbeddedResource Include="Flows_StepInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Flows_StepActionInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NoteBookInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PhoneBookInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Docs_DocInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="News_Article.hbm.xml" />
+    <EmbeddedResource Include="News_Type.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mails_DetailInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CRMInfo.hbm.xml" />
+    <EmbeddedResource Include="CRM_ContactInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Docs_OfficeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GovInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_DocInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_ModelFileInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_ModelInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_ModelStepInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_RecipientInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_StepActionInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_StepInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Flows_DocInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Docs_DocTypeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CRM_SupInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_SealInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bas_ComTypeInfo.hbm.xml" />
+    <EmbeddedResource Include="Bas_ComType_ModuleInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tips.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Z_EX1Info.hbm.xml" />
+    <EmbeddedResource Include="Z_EX2Info.hbm.xml" />
+    <EmbeddedResource Include="Z_EX3Info.hbm.xml" />
+    <EmbeddedResource Include="Z_EX4Info.hbm.xml" />
+    <EmbeddedResource Include="Z_EX5Info.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MeetingInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="VoteDetailInfo.hbm.xml" />
+    <EmbeddedResource Include="VoteInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Work_AttendInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Work_AttendSetInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys_UserLoginInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TasksInfo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks_TypeInfo.hbm.xml" />
+    <EmbeddedResource Include="Tasks_UserInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PaperDownloadInfo.hbm.xml" />
+    <EmbeddedResource Include="PaperInfo.hbm.xml" />
+    <EmbeddedResource Include="PaperTypeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Flows_Model_TypeInfo.hbm.xml" />
+    <EmbeddedResource Include="Gov_Model_TypeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CarsInfo.hbm.xml" />
+    <EmbeddedResource Include="Cars_ActionInfo.hbm.xml" />
+    <EmbeddedResource Include="Cars_TypeInfo.hbm.xml" />
+    <EmbeddedResource Include="C_GoodActionInfo.hbm.xml" />
+    <EmbeddedResource Include="C_GoodInfo.hbm.xml" />
+    <EmbeddedResource Include="C_GoodTypeInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sms_DataInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkLogInfo.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SysHRInfo.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

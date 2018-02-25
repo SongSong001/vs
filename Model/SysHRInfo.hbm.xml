@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.SysHRInfo, WC.Model" table="SysHR" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+
+        <property name="UserID" column="UserID" type="Int32" length="4" />
+        <property name="UserName" column="UserName" type="String"  />
+        <property name="DepName" column="DepName" type="String"  />
+        <property name="RealName" column="RealName" type="String"  />
+        <property name="DepID" column="DepID" type="Int32" length="4" />
+        <property name="MinZu" column="MinZu" type="String"  />
+        <property name="HuKouXZ" column="HuKouXZ" type="String"  />
+        <property name="HuKouSZD" column="HuKouSZD" type="String"  />
+        <property name="WorkTime" column="WorkTime" type="String"  />
+        <property name="BiYeYX" column="BiYeYX" type="String"  />
+        <property name="SchoolTime" column="SchoolTime" type="String"  />
+        <property name="XueLi" column="XueLi" type="String"  />
+        <property name="ZhuanYe" column="ZhuanYe" type="String"  />
+
+        <property name="SYQMonth" column="SYQMonth" type="Int32" length="4" />
+        <property name="ZhuanZhengRQ" column="ZhuanZhengRQ" type="DateTime" />
+        <property name="SFZNO" column="SFZNO" type="String"  />
+        <property name="SFZFilePath" column="SFZFilePath" type="String"  />
+        <property name="HTRQ" column="HTRQ" type="String"  />
+        <property name="HTNX" column="HTNX" type="String"  />
+        <property name="HuoJiang" column="HuoJiang" type="String"  />
+        <property name="ChuFa" column="ChuFa" type="String"  />
+
+
+    </class>
+
+</hibernate-mapping>

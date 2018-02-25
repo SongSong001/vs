@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IIS目录访问权限的配置</title>
+</head>
+<body>
+<h1 style="margin-left:400; color:#ff0000;">UnauthorizedAccessException：应用程序目录需要开启读写权限！</h3>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>【注意】如果程序的主文件夹所在磁盘是NTFS格式，需要添加相应的权限。请参考以下步骤操作。</b><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>【注意】如果程序的主文件夹所在磁盘是FAT格式，则可跳过以下步骤。不需要配置文件夹权限。</b><BR><BR>
+
+&nbsp;&nbsp;&nbsp;&nbsp;提醒：如果系统是XP，请按顺序点工具 - 文件夹选项 - 查看 - 去掉“使用简单文件共享”前的勾 - 确定；文件夹“属性”对话框中才会有“安全”这一个选项。
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold; color:#ff0000;">A).Windows2003/2008及Win7 (IIS6或IIS7)</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;在程序的主文件夹，点击文件夹右键属性，在安全选单中添加一个 <b>IIS_WPG</b>(win2003)或<b>IIS_IUSRS</b>(win2008/win7) 权限勾取修改和读取(如下图所示)<BR>
+<br><IMG alt="" src="pic1/019.jpg" width=367 height=440>
+<br><IMG alt="" src="pic1/050.jpg" width=367 height=440>
+<br><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold; color:#ff0000;">B).WindowsXP系统 (IIS 5.1)</span> <br>在程序的主文件夹，点击文件夹右键属性，在安全选单中添加一个 Everyone 权限勾选上读取(如下图所示)<BR>
+<br><IMG alt="" src="pic1/020.jpg" width=367 height=440><br><br>
+<br>(Everyone权限将有一定安全风险，建议用于系统体验或局域网使用。互联网部署建议采用专业服务器或虚拟主机)
+<br><br>
+<b>至此程序目录权限已经配置完成</b><br><br>
+</body>
+</html>

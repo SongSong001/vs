@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.Gov_RecipientInfo, WC.Model" table="Gov_Recipient" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+        <property name="Flow_ID" column="Flow_ID" type="Int32" length="4" />
+        <property name="UserID" column="UserID" type="Int32" length="4" />
+        <property name="UserRealName" column="UserRealName" type="String"  />
+        <property name="UserDepName" column="UserDepName" type="String"  />
+        <property name="Sign" column="Sign" type="Int32" length="4" />
+        <property name="FeedBack" column="FeedBack" type="String"  />
+        <property name="SignTime" column="SignTime" type="DateTime" />
+
+      <property name="ComID" column="ComID" type="Int32" length="4" />
+    </class>
+
+</hibernate-mapping>

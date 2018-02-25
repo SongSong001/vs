@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="WC.Model.Mails_DetailInfo, WC.Model" table="Mails_Detail" >
+    <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="guid" column="guid" type="String" />
+
+    <property name="SendIDs" column="SendIDs" type="String"  />
+    <property name="SendRealNames" column="SendRealNames" type="String"  />
+    <property name="CcIDs" column="CcIDs" type="String"  />
+    <property name="CcRealNames" column="CcRealNames" type="String"  />
+    <property name="BccIDs" column="BccIDs" type="String"  />
+    <property name="BccRealNames" column="BccRealNames" type="String"  />
+    <property name="Bodys" column="Bodys" type="String"  />
+    <property name="Attachments" column="Attachments" type="String"  />
+
+    <property name="ComID" column="ComID" type="Int32" length="4" />
+  </class>
+
+</hibernate-mapping>

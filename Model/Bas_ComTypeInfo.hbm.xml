@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+  <class name="WC.Model.Bas_ComTypeInfo, WC.Model" table="Bas_ComType" >
+    <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+    <property name="guid" column="guid" type="String"  />
+    <property name="TypeName" column="TypeName" type="String"  />
+    <property name="VipTime" column="VipTime" type="Int32" length="4" />
+    <property name="UserLimit" column="UserLimit" type="Int32" length="4" />
+    <property name="FileLimit" column="FileLimit" type="Int32" length="4" />
+    <property name="AD_Lock" column="AD_Lock" type="Int32" length="4" />
+    <property name="Notes" column="Notes" type="String"  />
+  </class>
+
+</hibernate-mapping>

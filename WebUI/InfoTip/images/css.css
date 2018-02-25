@@ -1,0 +1,25 @@
+﻿/* 全局样式 */
+*{margin:0;padding:0;}
+img{border:0;}
+ul,li{list-style:none;}
+a {color:#0151E3;text-decoration:underline;}
+a:hover{color:#568DF1;text-decoration:underline;}
+.blk{color:#000;}
+.blk a {color:#000;text-decoration:underline;}
+.blk a:hover{color:#555;text-decoration:underline;}
+body{margin:0 auto;font-family: 宋体,Arial, Helvetica, sans-serif;font-size:14px;line-height:24px;color:#000;}
+.main{ position:relative; margin:0 auto;width:604px;padding-top:45px}
+.main1{background:url(01.gif) repeat-y;padding-top:24px;padding-left:52px}
+.main11{padding-bottom:20px;}
+.main12{color:#7B7B7B;line-height:32px;padding-bottom:54px}
+.main13{text-align:center;height:36px;font-size:14px;width:540px}
+.main2{height:83px;background:url(01.jpg)}
+.main2 h1{text-indent:-9999px;}
+.main3{height:13px;background:url(02.gif);overflow:hidden}
+.concern{ position: absolute; z-index: 99; right:20px; top:374px; }
+.concern .txt{vertical-align:middle; line-height:16px;}
+.concern a{text-indent:-9999px; display:inline-block; background:url(ui.png) no-repeat; width:16px; height:16px; overflow:hidden; vertical-align:middle; margin:0 3px;}
+.concern a.sina{background-position:0 -350px;}
+.concern a.sina:hover{background-position:0 -300px;}
+.concern a.tx{background-position:0 -450px;}
+.concern a.tx:hover{background-position:0 -400px;}

@@ -1,0 +1,678 @@
+/**全局部分**/
+BODY
+{
+	font: 12px Tahoma, Verdana;
+	background:#fff;
+	width:100%;
+	margin:5px auto;
+}
+P
+{
+	margin:3px;
+}
+DIV
+{
+	text-align:left;
+}
+img{
+	border:0;
+}
+.Button
+{
+	border:solid 1px #87A3C1;
+	margin:1px;
+	background:#FFFFFF url('button_bg.gif');
+	line-height:18px;
+	height:21px;
+	font-size:12px;
+	padding:1px
+}
+.BodyBlock
+{
+	border:solid 3px #DADADA;
+	background:#FFFFFF;
+	margin:0px 10px;
+	text-align:center;
+}
+A
+{
+	text-decoration:none;
+}
+A:link 
+{
+	text-decoration: none;
+	color: #000000;
+}
+A:visited
+{
+	text-decoration: none;
+	color: #000000;
+}
+A:hover
+{
+	text-decoration: none;
+	color: #FF0000;
+}
+dl
+{
+	background-color:#EFF4F8;
+	margin:1px 0px 0px;
+	width:100%;
+	padding:0px;
+	overflow:hidden
+}
+dl dd{
+	margin:0;padding:5px 0px 2px;
+}
+ul
+{
+	background-color:#EFF4F8;
+	margin:1px;
+	height:23px;
+	line-height:23px;
+	padding:0px;
+	list-style:none;
+}
+ul li{
+	float:left
+}
+ul li img{
+	margin:5px 0 0px;
+}
+.Cursor
+{
+	cursor:pointer
+}
+.Block
+{
+	border:solid 1px #A8C5E4;
+	padding:1px;
+	margin:5px auto;
+	width:98%;
+}
+.DottedBlock
+{
+	border:1px #A8C5E4 dashed;
+	padding:1px;
+	margin:5px auto;
+	width:98%;
+}
+.BlankBlock
+{
+	padding:1px;
+	margin:5px auto;
+	width:98%;
+}
+.Title
+{
+	background-color:#68A6E4;
+	margin:1px;
+	font-weight:bold;
+	color:#FFFFFF
+}
+.Title A
+{
+	color:#FFFFFF;
+}
+.Title A:visited
+{
+	color:#FFFFFF;
+}
+.SmallTitle
+{
+	background-color:#68A6E4;
+	margin:1px;
+	color:#FFFFFF
+}
+.SmallTitle A
+{
+	color:#FFFFFF;
+}
+.SmallTitle A:visited
+{
+	color:#FFFFFF;
+}
+.Header
+{
+	background-color:#CCE7FD;
+}
+.Middle
+{
+	background-color:#EFF4F8;
+}
+
+.Footer
+{
+	background-color:#ECF4FB;
+}
+/**首页部分**/
+.ForumInfo
+{
+	padding:5px;
+	overflow:hidden;
+}
+.BoardRight
+{
+	float:right;
+	width:160px; 
+	padding:5px;
+}
+.BoardIcon
+{
+	float:left;
+	text-align:center;
+	width:50px; 
+	padding-top:5px;
+}
+.BoardContent
+{
+margin:5px 280px 5px 50px;height:1%;table-layout:fixed;
+}
+.BoardRight_I
+{
+	float:left;
+	width:67%; 
+	padding:5px 0px;
+	overflow:hidden
+}
+.BoardRight_I div{
+	width:100%;height:18px;line-height:18px;overflow:hidden
+}
+.BoardIcon_I
+{
+	float:left;
+	text-align:center;
+	width:50px;
+	height:45px; 
+	padding:10px 0px;
+	border-left:1px #FFFFFF solid
+}
+.BoardState
+{
+	text-align:center;
+	overflow:hidden;
+	padding:5px;
+	height:30px;
+}
+.BoardState div
+{
+	float:left;
+	width:33%;
+	text-align:center
+}
+
+/**帖子列表页部分**/
+.GroupList
+{
+	width:98%;
+	overflow:hidden;
+	margin:5px auto 0px auto;
+}
+.GroupItem
+{
+	margin-top:5px;
+	margin-right:2px;
+	border:solid 1px #75BEFA;
+	border-bottom:0px;
+	float:left;
+}
+.GroupInside
+{
+	margin:1px 1px 0px;
+	padding:5px 5px 3px;
+	background-color:#CCE7FD;
+	line-height:14px;
+}
+.GroupInside-On
+{
+	margin:1px 1px 0px;
+	padding:5px 5px 3px;
+	background-color:#ECF4FB;
+	line-height:14px;
+}
+.BoardRule
+{
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin:0px auto;
+	padding:1px;
+	width:98%;
+	background-color : #F6F4EB;
+}
+/**内容页部分**/
+.TopicLeft{
+	background-color:#EFF4F8;
+	float:left;
+	width:180px;
+	padding:5px
+}
+.TopicRight{
+	border-left:solid 1px #FFFFFF;
+	background-color:#EFF4F8;
+	overflow:hidden
+}
+* html .TopicRight{
+	border-left:solid 1px #FFFFFF;
+	background-color:#EFF4F8;
+	margin-left:190px;
+}
+.TopicContent
+{
+	padding:5px;
+	font: 14px Tahoma, Verdana;
+	min-height:200px
+}
+* html .TopicContent{
+	padding:5px;
+	font: 14px Tahoma, Verdana;
+	height:200px
+}
+.UserSign
+{
+	margin:5px;
+	padding:5px;
+}
+.UserInfoList
+{
+	width:160px;
+	height:18px; 
+	padding-top:4px;
+	border-bottom:dashed 1px #CCE7FD;
+}
+.VoteList{
+	clear:both;width:100%;overflow:hidden
+}
+.VoteList .VoteLeft{
+	float:left;width:29%;border-right:1px #FFFFFF solid;padding:2px;
+}
+.VoteList .VoteRight{
+	margin-left:29%;padding:2px;
+}
+/*分页码部分*/
+.Pager
+{
+	float:right;
+}
+.Pager_Info
+{
+	float:left;
+	margin-right:2px;
+	padding:3px;
+	border:solid 1px #CCE7FD;
+	background-color:#ECF4FB;
+}
+.Pager_Number
+{
+	float:left;
+	margin-right:2px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:8px;
+	padding-right:8px;
+	border:solid 1px #CCE7FD;
+	background-color:#F9FBFD;
+}
+.Pager_Pointer
+{
+	float:left;
+	margin-right:2px;
+	padding-top:7px;
+	padding-bottom:7px;
+	padding-left:7px;
+	padding-right:7px;
+	border:solid 1px #CCE7FD;
+	background-color:#ECF4FB;
+}
+.Pager_Input
+{
+	float:left;
+	text-align:center;
+	width:100px;
+	padding:1px;
+	border:solid 1px #CCE7FD;
+	background-color:#ECF4FB;
+}
+.Pager_Input input
+{
+	height:12px;
+	width:30px;
+}
+.Pager_Current
+{
+	margin-left:-9px;
+	margin-right:-9px;
+	background-color:#CCE7FD;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:8px;
+	padding-right:8px;
+}
+/**其他**/
+.MenuLead
+{
+	background-color:#EFF4F8;
+	color:#DFDFDF;
+
+	padding:1px;
+	text-align:right;
+}
+.ForumIcon
+{
+	width:310px; 
+	border-left:1px #DFDFDF dotted;
+	float:right;
+	text-align:center;
+}
+.ForumIcon div
+{
+	width:60px;
+	float:right;
+	text-align:center
+}
+.Possition
+{
+	background-image: url('table_lead.gif');
+	color : #6E6E6E;
+	height:22px;
+	font-weight:bold;
+}
+.Possition A:link 
+{
+	TEXT-DECORATION: none;
+	COLOR: #6E6E6E;
+}
+.Possition A:visited
+{
+	TEXT-DECORATION: none;
+	COLOR: #6E6E6E;
+}
+.Possition A:hover
+{
+	TEXT-DECORATION: none;
+	COLOR: #FF0000;
+}
+.H15
+{
+	height:15px;
+}
+.H20
+{
+	height:20px;
+}
+.H22
+{
+	height:22px;
+}
+.H25
+{
+	height:25px;
+}
+.P1
+{
+	padding:1px;
+}
+.P2
+{
+	padding:2px;
+}
+.P5
+{
+	padding:5px;
+}
+.P10
+{
+	padding:10px;
+}
+.PTB5
+{
+	padding:5px 0px
+}
+.PRL5
+{
+	padding:0px 5px
+}
+.PT5
+{
+	padding-top:5px;
+}
+.M1
+{
+	margin:1px
+}
+.M5
+{
+	margin:5px;
+}
+.LH20
+{
+	line-height:20px
+}
+.LH22
+{
+	line-height:22px
+}
+.LH25
+{
+	line-height:25px
+}
+.Left
+{
+	float:left;
+}
+.Right
+{
+	float:right;
+}
+.Hidden
+{
+	overflow:hidden;
+}
+.TC
+{
+	text-align:center;
+}
+.TL
+{
+	text-align:left;
+}
+.TR
+{
+	text-align:right;
+}
+.Red
+{
+	color:Red;
+}
+.Blue
+{
+	color:Blue;
+}
+.B
+{
+	font-weight:bold
+}
+.BT
+{
+	border-top:1px #FFFFFF solid
+}
+.BB
+{
+	border-bottom:1px #FFFFFF solid
+}
+.BL
+{
+	border-left:1px #FFFFFF solid
+}
+.BR
+{
+	border-right:1px #FFFFFF solid
+}
+/**被屏式样**/
+.PostHidden
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**金币购买**/
+.PostBuy
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**金币提问**/
+.PostAsk
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**权限帖**/
+.PostRight
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**帖子被编辑**/
+.PostEdit
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**最佳答案**/
+.GoodAnswer
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	text-align : center;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+	float:right;
+}
+/**提取的最佳答案显示式样**/
+.AnswerContent
+{
+	overflow:hidden;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+/**引用式样**/
+.Quote
+{
+	overflow:hidden;
+	font: 12px Tahoma, Verdana;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+/**代码式样**/
+.Code
+{
+	overflow:hidden;
+	font: 12px Tahoma, Verdana;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+/**需回复可见内容式样**/
+.NeedReply
+{
+	overflow:hidden;
+	font: 12px Tahoma, Verdana;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+/**需金币购买内容式样**/
+.NeedBuy
+{
+	overflow:hidden;
+	font: 12px Tahoma, Verdana;
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+/**下拉菜单**/
+.MenuSkin 
+{
+	position:absolute;
+	visibility:hidden;
+	overflow: hidden;
+	height:0px;
+	border: #B7B7D0 1px solid;
+	background:#ECEDEF url('menubg.gif') repeat-y;
+	z-index:100;
+}
+.MenuSkinInner 
+{
+	padding-left:30px;
+	padding-right:2px;
+	padding-top:5px;
+}
+.MenuItems
+{
+	padding: 1px 1px;
+	margin: 2px;
+	font-size:9pt;
+	line-height:14pt;
+}
+.MouseoverStyle
+{
+	padding: 0px;
+	border: #0B008B 1px solid;
+	background: #FFEEC2
+}

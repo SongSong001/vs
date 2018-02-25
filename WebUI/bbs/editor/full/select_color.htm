@@ -1,0 +1,103 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>选择颜色</title>
+<style type="text/css">
+td{
+	width:8px;
+	height:8px;
+}
+</style>
+</head>
+<script language="JavaScript" type="text/javascript">
+
+function oo(ID){
+	return document.getElementById(ID);
+}
+
+var qsParm = new Array();
+
+function retreiveColor() {
+	var query = window.location.search.substring(1);
+	var parms = query.split('&');
+	for (var i=0; i<parms.length; i++) {
+		var pos = parms[i].indexOf('=');
+		if (pos > 0) {
+			var key = parms[i].substring(0,pos);
+			var val = parms[i].substring(pos+1);
+			qsParm[key] = val;
+		}
+	}
+	oo('enterColor').value = "#" + qsParm['color'];
+	oo('PreviewColor').style.backgroundColor = "#" + qsParm['color'];
+}
+
+function selectColor(e) {
+	if(window.parent!=window.self) window.parent.formatText(qsParm['command'],qsParm['_myeditor_'],oo('enterColor').value);
+	else if(dialogArguments){
+		window.returnValue = oo('enterColor').value;
+		window.close();
+	}
+}
+
+function previewColor(e) {
+	var obj = document.all? e.srcElement : e.target;
+	if(obj.tagName=='TD' && obj.MyBackGroundColor){
+		var color = obj.MyBackGroundColor.toUpperCase();
+		oo('enterColor').value = color;
+		oo('PreviewColor').style.backgroundColor = color;
+	}
+}
+</script>
+<body bgcolor="#EEEEEE" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" onLoad="retreiveColor();" unselectable="on">
+<center>
+<span id="PreviewColor" style="height: 20px; width:50px; border:1px solid #000000;"></span>
+&nbsp;
+<input type="text" size="10" id="enterColor" name="enterColor">
+<br>
+<table id="ColorTable" onMouseOver="previewColor(event)" onClick="selectColor(event)" border="0" cellspacing="1" cellpadding="0" bgcolor="#000000" style="cursor: pointer;"></table>
+<script language="javascript">
+
+function CreateColorTable()
+{
+	var oTable = document.getElementById('ColorTable') ;
+	var aColors = ['00','33','66','99','CC','FF'] ;
+	
+	var sColor = new Array();
+	var sColor2 = ['#FF0000','#00FF00','#0000FF','#FFFF00','#00FFFF','#FF00FF'];
+	for ( var n = 0 ; n < 6 ; n++ ){
+		sColor[n] = '#' + aColors[n] + aColors[n] + aColors[n] ; 
+	}	
+	for ( var n = 0 ; n < 6 ; n++ ){
+		sColor[n+6] = sColor2[n] ; 
+	}	
+	var r=0;
+	function AppendColorRow( rangeA, rangeB ){
+		for ( var i = rangeA ; i < rangeA + 3 ; i++ ){ 
+			var oRow = oTable.insertRow(-1); 
+			AppendColorCell( oRow, '#000000' ) ;
+			AppendColorCell( oRow, sColor[r] ) ;
+			AppendColorCell( oRow, '#000000' ) ;
+			for ( var j = rangeB ; j < rangeB + 3 ; j++ ) { 
+				for ( var n = 0 ; n < 6 ; n++ ){ 
+					AppendColorCell( oRow, '#' + aColors[j] + aColors[n] + aColors[i] ) ; 
+				} 
+			} 
+			r++;
+		}
+	}
+	function AppendColorCell( targetRow, color){
+		var oCell = targetRow.insertCell(-1) ;
+		oCell.style.backgroundColor = color ;
+		oCell.MyBackGroundColor = color ;
+	}
+	AppendColorRow( 0, 0 ) ;
+	AppendColorRow( 3, 0 ) ;
+	AppendColorRow( 0, 3 ) ;
+	AppendColorRow( 3, 3 ) ;
+}
+CreateColorTable();
+</script>
+</center>
+</body>
+</html>

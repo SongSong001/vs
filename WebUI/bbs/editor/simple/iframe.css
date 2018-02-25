@@ -1,0 +1,49 @@
+p {
+	margin:0px;
+}
+A{
+FONT-SIZE: 12px;
+}
+body {
+	margin:5px;
+	font-size:14px;
+	padding-top:3px;
+	padding-left:3px;
+	padding-right:0px;
+}
+.Quote
+{
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+.Code
+{
+	border: 1px dashed #75BEFA;
+	border-top:3px double #75BEFA;
+	color:#00008B;
+	margin :5px;
+	padding:5px;
+	background-color : #F6F4EB;
+}
+.editor_flash {
+	border: darkgray 1px solid;
+	background-position: center center;
+	background-image: url(editor_flashlogo.gif);
+	background-repeat: no-repeat;
+}
+
+.editor_video_mp , .editor_video_rm {
+	border: darkgray 1px solid;
+	background-position: center center;
+	background-image: url(editor_video_logo.gif);
+	background-repeat: no-repeat;
+}
+
+base
+{
+	target:"_blank";
+}

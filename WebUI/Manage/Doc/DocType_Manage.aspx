@@ -1,0 +1,97 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DocType_Manage.aspx.cs" Inherits="WC.WebUI.Manage.Doc.DocType_Manage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/><title>文档分类</title>
+<link type="text/css" href="/manage/Style/InterFace.Css" rel="stylesheet" rev="stylesheet" media="all" />
+<link type="text/css" href="/manage/style.css" rel="stylesheet" rev="stylesheet" media="all" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/manage/include/common.js"></script>
+<script type="text/javascript" src="/js/validator.js"></script>  
+</head>
+<body >
+    <form id="form1" runat="server" onsubmit="return Validator.Validate(this.form,3);">
+<div id="interface_inside">
+  <div id="interface_quick">
+    <div class="interface_quick_left">您现在的操作 >> 我的文档 >> 文件分类</div>
+    <div class="interface_quick_right">
+    <a href="javascript:void(0)" onclick="javascript:window.location.replace(window.location.href);"><img style="vertical-align:middle;" src="/manage/images/reload.png" /><strong>刷新</strong></a>
+    &nbsp; &nbsp;
+    <a href="javascript:history.back();"><img style="vertical-align:middle;" src="/manage/images/ico_up1.gif" /><strong>后退</strong></a>  
+    </div>
+    <div class="clearboth"></div>
+  </div>
+  <div id="interface_main">
+    <div id="tabs_config" class="tabsbox">
+      
+
+      <div class="clearboth"></div>
+      
+      
+      <!-- 模块 -->
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+          <tr>
+            <td> 
+
+<div id="config_basic1" class="tabs_wrapper">
+<div class="tabs_main" align="left">  
+<div id="Div1">
+
+<table class="table subsubmenu">
+  <thead>
+	<tr>
+	  <td>
+<a href="/Manage/doc/DocType_List.aspx" >文件分类列表</a>
+<a href="/Manage/doc/DocType_Manage.aspx">添加文件分类</a>
+	  </td>
+	  <td style="text-align:right">
+
+	  </td>
+	</tr>
+  </thead>
+</table>
+<br />  
+
+<table class="table">
+<thead>
+<tr>
+	<td colspan="2"><a href="#" class="helpall">[?]</a></td>
+</tr>
+</thead>
+<tr>
+	<th style="width:140px; font-weight:bold;">&nbsp;* 分类名称：<a href="#" class="help">[?]</a></th>
+	<td><span class="note">请输入 分类名称 如： 素材 案例 手册 等等.</span>
+	<input runat=server name="TypeName" dataType="Require" msg="分类名称不能为空" type="text" value="" id="TypeName" style="width:504px;" /></td>
+</tr>
+<tr>
+	<th style="width:140px; font-weight:bold;">&nbsp;备注：<a href="#" class="help">[?]</a></th>
+	<td><span class="note">请输入 备注. (选填)</span>
+	<textarea runat=server style="BACKGROUND-IMAGE: url(/img/line.gif); LINE-HEIGHT: 22px; padding-left:10px; background-repeat:repeat;" name=Notes id=Notes rows=4 cols=70></textarea>
+	</td>
+</tr>
+
+</table>
+
+<br />
+<div style="text-align:center;">
+	<asp:Button runat=server class="button" ID=save_bt Text='保存' OnClick=Save_Btn OnClientClick="return Validator.Validate(this.form,3);" />
+	&nbsp;&nbsp;<input type="reset" class="button" value='重置' />
+</div>
+
+    
+              </div></div></div>
+            </td>
+          </tr>
+        </table>
+
+      <!-- 模块 -->
+
+    </div>
+  </div>
+</div>    
+    </form>
+</body>
+</html>

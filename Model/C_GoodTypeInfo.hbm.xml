@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.C_GoodTypeInfo, WC.Model" table="C_GoodType" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+        <property name="TypeName" column="TypeName" type="String" />
+        <property name="Notes" column="Notes" type="String" />
+        <property name="Orders" column="Orders" type="Int32" length="4" />
+        <property name="ParentID" column="ParentID" type="Int32" length="4" />
+    </class>
+
+</hibernate-mapping>

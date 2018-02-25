@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false">
+    <class name="WC.Model.C_GoodActionInfo, WC.Model" table="C_GoodAction" >
+        <id name="id" column="id" type="Int32"  length="4" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+        <property name="guid" column="guid" type="String"  />
+
+        <property name="GoodID" column="GoodID" type="Int32" length="4" />
+        <property name="TypeID" column="TypeID" type="Int32" length="4" />
+        <property name="OpeAmount" column="OpeAmount" type="Int32" length="4" />
+        <property name="OpeKind" column="OpeKind" type="Int32" length="4" />
+
+        <property name="AddPerson" column="AddPerson" type="String"  />
+        <property name="AddTime" column="AddTime" type="String"  />
+        <property name="Notes" column="Notes" type="String"  />
+        <property name="Ope" column="Ope" type="String"  />
+        <property name="OpeNameList" column="OpeNameList" type="String"  />
+        <property name="OpeUserList" column="OpeUserList" type="String"  />
+        <property name="TypeName" column="TypeName" type="String"  />
+        <property name="GoodName" column="GoodName" type="String"  />
+    </class>
+
+</hibernate-mapping>

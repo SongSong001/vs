@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.1.dtd">
+<dotfuscator version="2.1">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <asmlist>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.BLL.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.Common.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.DAL.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.DBUtility.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.Factory.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.IDAL.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.Model.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.Tool.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.WebUI.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="C:\obj" />
+  </output>
+  <tempdir>
+    <file dir="C:\tmp" />
+  </tempdir>
+  <renaming>
+    <option>disable</option>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist />
+  </renaming>
+  <controlflow level="high" />
+  <stringencrypt>
+    <includelist>
+      <assembly>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.BLL.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.Tool.dll" />
+      </assembly>
+      <assembly>
+        <file dir="D:\Dragon Knight\Publish\bin" name="WC.WebUI.dll" />
+      </assembly>
+    </includelist>
+  </stringencrypt>
+  <removal>
+    <referencerulelist />
+  </removal>
+  <linking />
+  <premark>
+    <assemblylist />
+    <encoding name="6bit-a" />
+  </premark>
+  <licensing>
+    <option>disable</option>
+    <permutation name="" />
+    <product versionmask="revision" />
+    <nolicenseaction name="showactivation" />
+    <unlockingfeature name="" />
+  </licensing>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" />
+  </smartobfuscation>
+</dotfuscator>

@@ -1,0 +1,19 @@
+50:ma5o2j8b
+100:b5ao2j8m
+ok:7e5sttok
+
+KF表示 用户数超过20未到50 （标准版）
+NF表示 用户可能已注册，但是超过50 （标准版）
+KE表示 用户数超过20未到100 （专业版）
+NE表示 用户可能已注册，但是超过100（专业版）
+KK表示 完全版本超过20 （旗舰版）
+
+0620 (access 和 sql)
+AC:maomaown
+SL:xiaowann
+AE:maoqiuqu
+SR:maomaoqu        2R:maomaoqu  (v5.7.2 weboffice以后 D盘)   3R     4R
+AK:daqiuqiu        2A:daqiuqiu  (v5.7.2 以后 D盘)            3A     4A
+SC:choupigu        2S:choupigu  (v5.7.2 以后 D盘)
+
+LQ:hahsniga  (上海岭铨)

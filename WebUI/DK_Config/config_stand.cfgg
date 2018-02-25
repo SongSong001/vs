@@ -1,0 +1,10 @@
+﻿
+$基本配置$
+{user_cookie_delay?100}  //用户cookie有效期   @end
+{infotip_refresh?2}  //提示转向2秒后刷新   @end
+{flowstep_nums?50}  //流程模型步骤总数上限50   @end
+{index_tips? marqueeContent[0] = '<span><a href=#>学会"偷懒"，"懒"出境界，提高工作效率最有效的方法！</a></span>'; marqueeContent[1] = '<span><a href=#>您的系统没有设置滚动公告，这里显示的是默认信息</a></span>'; marqueeContent[2] = '<span><a href=#>滚动公告在 系统管理=>资讯管理 中设置. 谢谢使用</a></span>'; }  // index_tips @end
+
+$复合配置$
+{forbiddenuploadtype!asp:.asp,aspx:.aspx,php:.php,cgi:.cgi,asa:.asa,exe:.exe,bat:.bat,com:.com,htm:.htm,html:.html,xhtml:.xhtml,shtml:.shtml,htx:.htx,ashx:.ashx,cmd:.cmd}  //禁止上传扩展名类型  @end
+
